@@ -1,3 +1,4 @@
+from tkinter import *
 import random
 Pattern = {'7': ' ', '8': ' ', '9': ' ',
             '4': ' ', '5': ' ', '6': ' ',
@@ -50,7 +51,7 @@ def game():
             if Pattern['7'] == Pattern['8'] == Pattern['9'] != ' ':  # across the top
                 printPattern(Pattern)
                 print("\nGame Over.\n")
-                print(" Player " + swap + " won. ****")
+                print(" Player " + swap + " won. ****") 
                 break
             elif Pattern['4'] == Pattern['5'] == Pattern['6'] != ' ':  # across the middle
                 printPattern(Pattern)
